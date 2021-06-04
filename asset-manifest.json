@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/iberograficum/static/css/main.ae6154c5.chunk.css",
+    "main.js": "/iberograficum/static/js/main.b972ac52.chunk.js",
+    "main.js.map": "/iberograficum/static/js/main.b972ac52.chunk.js.map",
+    "runtime-main.js": "/iberograficum/static/js/runtime-main.467bd0dc.js",
+    "runtime-main.js.map": "/iberograficum/static/js/runtime-main.467bd0dc.js.map",
+    "static/js/2.d740731c.chunk.js": "/iberograficum/static/js/2.d740731c.chunk.js",
+    "static/js/2.d740731c.chunk.js.map": "/iberograficum/static/js/2.d740731c.chunk.js.map",
+    "index.html": "/iberograficum/index.html",
+    "static/css/main.ae6154c5.chunk.css.map": "/iberograficum/static/css/main.ae6154c5.chunk.css.map",
+    "static/js/2.d740731c.chunk.js.LICENSE.txt": "/iberograficum/static/js/2.d740731c.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/iberograficum/static/media/20200428iki-PHN-Likine.f40c8081.ttf",
+    "static/media/C.2.3 Ullastret - O.Prat.e0f73fc8.png": "/iberograficum/static/media/C.2.3 Ullastret - O.Prat.e0f73fc8.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.467bd0dc.js",
+    "static/js/2.d740731c.chunk.js",
+    "static/css/main.ae6154c5.chunk.css",
+    "static/js/main.b972ac52.chunk.js"
+  ]
+}
