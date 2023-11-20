@@ -1,23 +1,16 @@
 import React from "react"
-import ReactDOM from "react-dom"
+import ReactDOM from 'react-dom/client'
+import { BrowserRouter as Router } from "react-router-dom"
 //component file
-import IMEContainer from "./components/IMEContainer"
-import Plomo from "./components/Plomo"
-import FAQ from "./components/FAQ"
-import Footer from "./components/Footer"
-
+import Iberograficum from "@/components/Iberograficum"
 //scripts
 import "./lib/iberice.js"
-
 //stylesheet
-import "./App.css"
+import './index.css'
 
-ReactDOM.render(
-    <React.StrictMode>
-        <IMEContainer />
-        <Plomo />
-        <FAQ />
-        <Footer />
-    </React.StrictMode>,
- document.getElementById("root")
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <React.StrictMode>
+    <Iberograficum />
+  </React.StrictMode>
 )
+ 

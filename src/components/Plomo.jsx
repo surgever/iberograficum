@@ -1,51 +1,17 @@
-import React from "react"
-import PlomoPrat from "../img/C.2.3 Ullastret - O.Prat.png"
-import $ from "jquery"
+import PlomoUllastret from "@/img/C.2.3 Ullastret - Foto.png"
+import PlomoPrat from "@/img/C.2.3 Ullastret - O.Prat.png"
 
 const Plomo = () => {
-    
-    // Document animation needs to be global
-    var $plom, h, ventW;
-    var desplazarPerspectiva = function (event) {
-        //console.log(arguments);
-        var posX = event.clientX / ventW; // (0 = izq / 1 = der)
-        var posY = event.clientY / h; // (0 = top / 1 = btm)
-        $plom.css(
-            'transform', 'translateY(+20px) translateZ(+160px) rotateX(' + (posY * 50 - 25) + 'deg) rotateY(' + ((posX * -40) + 20) + 'deg) translateX(' + ((posX * -200) + 100) + 'px)' //translateX(px)
-        );
-        //console.log('translateZ(-120px) rotateX('+(posY*30-20)+'deg) rotateY('+ ((posX*-50)+25) +'deg) ');
-    };
-
-    // Movement
-    if (/Android.+mobile|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) == false) {
-        $plom = $('#plom img');
-        console.log('asdasdasdasd');
-        $('#plom').hover(function (event) { //in
-            ventW = $(window).width();
-            h = $(window).height();
-            desplazarPerspectiva(event);
-            setTimeout(function () {
-                $plom.removeClass('transition');
-                $('#plom').unbind('mousemove').mousemove(desplazarPerspectiva);
-            }, 200);
-
-        }, function () { // out 
-            $('#plom').unbind('mousemove');
-            $plom.addClass('transition');
-            //$plom[0].offsetHeight;
-            $plom.attr('style', '');
-        })
-    }
 
     return (
         
         <div className="example">
-            <figure id="plom"><a href="https://i.postimg.cc/fTLVTL44/C-2-3-Ullastret-Foto.png" target="_blank">
-                <img className="transition" src="https://i.postimg.cc/fTLVTL44/C-2-3-Ullastret-Foto.png" />
+            <figure id="plom"><a href={PlomoUllastret} target="_blank" rel="nofollow noreferrer">
+                <img className="transition" src={PlomoUllastret} alt="Plomo Ullastret"/>
             </a></figure>
             <div className="wrap">
                 <table><tbody>
-                    <tr><th colSpan="2"><img src={PlomoPrat} /></th></tr>
+                    <tr><th colSpan="2"><img src={PlomoPrat} alt="Calco Plomo Ullastret" /></th></tr>
                     <tr>
                         <td className="ibero"><p>𐈀𐈬​:​𐈊𐈯𐈅𐈀𐈭𐈂𐈋</p></td>
                         <td className="latin">ar : basiar̆ebe</td>

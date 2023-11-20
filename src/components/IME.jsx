@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react"
+import { useState, useEffect } from "react"
 import Header from "./Header"
 import OptionsBar from "./OptionsBar"
 import AreaLatIn from "./AreaLatIn"
@@ -6,7 +6,8 @@ import AreaIberic from "./AreaIberic"
 import AreaLatOut from "./AreaLatOut"
 import iberice from  "../lib/iberice.js"
 
-const IMEContainer = () => {
+const IME = () => {
+    // Input Methor Editor component
     const [direction,setDirection] = useState(getInitialOptions("direction"))
     const [mode,setMode] = useState(getInitialOptions("mode"))
     const [forceMode,setForceMode] = useState(getInitialOptions("forceMode"))
@@ -79,7 +80,6 @@ const IMEContainer = () => {
     return (
         <div id="iberograficum" className={direction + ' ' + mode+ ' ' + forceMode}>
             <div className="wrap">
-                <Header/>
                 <OptionsBar handleModeProps={handleMode} handleDirProps={handleDir}/>
                 <AreaLatIn 
                     valueProps={textLatin}
@@ -97,4 +97,4 @@ const IMEContainer = () => {
     )
 }
 
-export default IMEContainer
+export default IME

@@ -1,21 +1,21 @@
 * {
-    box-sizing: border-box; margin: 0;
-    padding: 0;
-    }
+  box-sizing: border-box; margin: 0;
+  padding: 0;
+  }
 body {
-    font-family: "Segoe UI", Arial, sans-serif; line-height: 1.4;
-    color: #444;
-    background: #fff;
-    height: 100vh;
-    }
+  font-family: "Segoe UI", Arial, sans-serif; line-height: 1.4;
+  color: #444;
+  background: #fff;
+  height: 100vh;
+  }
 
 #iberograficum {
-        /*display: flex; flex-direction: column; */
-        justify-content: center; align-items: center; 
-         margin: 0 auto;
-        }
+      /*display: flex; flex-direction: column; */
+      justify-content: center; align-items: center; 
+       margin: 0 auto;
+      }
 .inner {
-            width: 100%;
+          width: 100%;
 padding: 8rem 10px 4rem; }
 
 @font-face { font-family: "PHN-Basiarebe"; src: url("./fonts/20200420-PHN-Basiarebe.ttf") format('truetype'); }
@@ -23,9 +23,9 @@ padding: 8rem 10px 4rem; }
 @font-face { font-family: "PHN-Likine"; src: url("./fonts/20200428iki-PHN-Likine.ttf") format('truetype'); }
 html,body {padding:0;margin:0}
 body {background:#000; color: white;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-			font-family: sans-serif; line-height: 1.3em}
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+    font-family: sans-serif; line-height: 1.3em}
 .phn textarea, .ibero, .signary b {font-size: 24px; font-family: "PHN-Basiarebe", sans-serif}
 .nondual .phn textarea, .nondual .phn b{font-family: "PHN-Likine", sans-serif}
 .phs textarea, .phs .signary b {font-size: 24px; font-family: "PHS-Balkesire", sans-serif}
@@ -38,8 +38,8 @@ a {color: inherit; text-decoration: none}
 hgroup img {width: 178px; display: block;}
 h1 span {position: absolute; left: -9999px;font-size: 20px}
 .modes b {font-style: normal; display: block;
-    -webkit-tap-highlight-color: transparent; user-select: none; 
-    min-width:15px; padding: 0 5px; line-height: 25px; border-radius: 3px; float: left; cursor:pointer}
+  -webkit-tap-highlight-color: transparent; user-select: none; 
+  min-width:15px; padding: 0 5px; line-height: 25px; border-radius: 3px; float: left; cursor:pointer}
 .modes b:hover {background: #444;}
 .force .mode b {opacity: 1; color: #888}
 .nondual .b1, .dual .b2, .trial .b3 {color: lightgreen}
@@ -54,10 +54,10 @@ h1 span {position: absolute; left: -9999px;font-size: 20px}
 .direction span, .ibe2lat .direction figure {float: left}
 
 .panel i {padding:0; display:inline-block; border-radius:5px; margin: 0 auto;
-    -webkit-user-select: none; user-select: none;margin-bottom: 2px;}
+  -webkit-user-select: none; user-select: none;margin-bottom: 2px;}
 .panel b {font-weight:normal; font-style: normal; -webkit-tap-highlight-color: transparent;
-    position:relative; cursor:pointer; padding:2px .3em; display:inline-block;
-    -webkit-user-select: none; user-select: none;
+  position:relative; cursor:pointer; padding:2px .3em; display:inline-block;
+  -webkit-user-select: none; user-select: none;
 min-width:10px; color:#eee; text-align:center; height:1.2em; border-radius:5px}
 .panel b:hover {color:#fff; background:#666; opacity: 1 !important;
 -webkit-transform:scale(1.4); transform:scale(1.4); z-index:101}
@@ -80,7 +80,7 @@ min-width:10px; color:#eee; text-align:center; height:1.2em; border-radius:5px}
 .signary td b.thin {width: 10px;}
 
 textarea {margin:0 0 5px; padding:5px; width: 100%; box-sizing: border-box; display: block;
-    height:200px;border: none;border-radius:3px; background:#eee; outline: 0 }
+  height:200px;border: none;border-radius:3px; background:#eee; outline: 0 }
 .area.latin textarea {padding-top: 30px}
 textarea.latin { font: normal 16px Arial, Helvetica, sans-serif; }
 #t,.iw textarea {border-radius: 0 0 3px 3px;outline: 0}
@@ -89,11 +89,11 @@ textarea.latin { font: normal 16px Arial, Helvetica, sans-serif; }
 /* Info */
 .info {background: black; color: white; margin: 15px 0em; padding: 0 0 10px;border-radius: 5px; position: relative;}
 .info b {display: block; padding: 10px; cursor:pointer; line-height: 25px; border-radius: 5px;
-    -webkit-tap-highlight-color: transparent; user-select: none;}
+  -webkit-tap-highlight-color: transparent; user-select: none;}
 .info b { position: relative; overflow: hidden; z-index: 1;}
 .ripple-effect {position: absolute;border-radius: 50%;opacity: 0.4;
-    animation: ripple-animation 2s cubic-bezier(.25, .8, .25, 1);
-    background: rgba(255,255,255,0.1);z-index: -1;
+  animation: ripple-animation 2s cubic-bezier(.25, .8, .25, 1);
+  background: rgba(255,255,255,0.1);z-index: -1;
 }
 .info p {margin: 0px; padding: 0 10px 10px 20px; font-size: 16px;}
 .info ul {margin: 0px; padding: 0 10px 10px 40px; font-size: 14px;}
@@ -109,7 +109,7 @@ textarea.latin { font: normal 16px Arial, Helvetica, sans-serif; }
 
 .example {background:#333; padding-top: 2em}
 .example table {line-height: 36px; overflow:auto;color: black; background: white;
-    border-radius: 3px; margin: 0 auto; width:100%; border-collapse: collapse;}
+  border-radius: 3px; margin: 0 auto; width:100%; border-collapse: collapse;}
 .example img {max-width: 550px;width: 100%;}
 .example p {display: inline;}
 .example tr:hover td {background: #eee}
@@ -123,8 +123,8 @@ textarea.latin { font: normal 16px Arial, Helvetica, sans-serif; }
 #doc {background: #444}
 #faq .info {background:#333}
 .btn {display: inline-block; position: relative; z-index: 1; overflow: hidden;
-    background: url('./img/icon-download.png') 5px top no-repeat #0b5; color: #fff; background-size: 32px;
-    padding: 5px 10px 5px 40px; border-radius: 3px;box-shadow: inset 0px -3px #00000030;
+  background: url('./img/icon-download.png') 5px top no-repeat #0b5; color: #fff; background-size: 32px;
+  padding: 5px 10px 5px 40px; border-radius: 3px;box-shadow: inset 0px -3px #00000030;
 }
 .btn:hover {background-color:#0d6}
 #creditos {background: #555; margin: 2em auto 0; padding: 1em 2em 20px; font-size: 90%; }
@@ -133,57 +133,57 @@ textarea.latin { font: normal 16px Arial, Helvetica, sans-serif; }
 /* Controlling signary keys shown according to mode */
 /* Nondual. HIDE: columns first char, and gu. EXCEPT: 3rd column, ku, and l */
 .nondual .signary td b:nth-child(1),
-    .nondual .signary tr:nth-child(5) td:nth-child(2) b:nth-child(2) {display:none}
+  .nondual .signary tr:nth-child(5) td:nth-child(2) b:nth-child(2) {display:none}
 .nondual .signary td:nth-child(3) b:nth-child(1),
-    .nondual .signary tr:nth-child(5) td:nth-child(2) b:nth-child(1),
-    .nondual .signary tr:nth-child(5) td:nth-child(5) b:nth-child(1) {display: inline-block}
+  .nondual .signary tr:nth-child(5) td:nth-child(2) b:nth-child(1),
+  .nondual .signary tr:nth-child(5) td:nth-child(5) b:nth-child(1) {display: inline-block}
 /* Dual. HIDE: 5 vowels and 3 continuals */
 .dual .signary tr:nth-child(-n+2) td:nth-child(1) b:nth-child(2),
-    .dual .signary tr:nth-child(n+3) td:nth-child(1) b:nth-child(1),
-    .dual .signary tr:nth-child(1) td:nth-child(5) b:nth-child(2),
-    .dual .signary tr:nth-child(n+2) td:nth-child(5) b:nth-child(1) {display:none}
+  .dual .signary tr:nth-child(n+3) td:nth-child(1) b:nth-child(1),
+  .dual .signary tr:nth-child(1) td:nth-child(5) b:nth-child(2),
+  .dual .signary tr:nth-child(n+2) td:nth-child(5) b:nth-child(1) {display:none}
 .dual .signary tr:nth-child(5) td:nth-child(5) b:nth-child(1) {display: inline-block}
 /* Trial. SHOW: extended row */
 .trial .signary .numerals {display: table-row !important}
 .trial .signary span.num, span.num {display:none}
 
 @keyframes ripple-animation {
-    from {transform: scale(0);}
-    to {transform: scale(1);opacity: 0;}
+  from {transform: scale(0);}
+  to {transform: scale(1);opacity: 0;}
 }
 @media (max-width: 438px) {
-    hgroup h1 {float: none;text-align: center;}
-    hgroup h1 span {position: static; line-height: 1.5em; font-size: 18px; opacity: 0.6;}
-    hgroup h1 img {display: none}
-    .modes {float: none; width: 203px; margin: 0 auto;}
-    .wrap {padding: 10px}
-    .panel b { padding: 2px 0.2em;}
+  hgroup h1 {float: none;text-align: center;}
+  hgroup h1 span {position: static; line-height: 1.5em; font-size: 18px; opacity: 0.6;}
+  hgroup h1 img {display: none}
+  .modes {float: none; width: 203px; margin: 0 auto;}
+  .wrap {padding: 10px}
+  .panel b { padding: 2px 0.2em;}
 }
 @media (max-width: 628px) {
-    .signary {display: block}
-    .signary td b{
-        font-size: 28px;
-        line-height: 1.1em;
-        height: 26px;
-        padding: 0px 2px;
-    }
-    .trial .signary td b,.signary.open td b {padding: 0; width: 0.8em;}
+  .signary {display: block}
+  .signary td b{
+      font-size: 28px;
+      line-height: 1.1em;
+      height: 26px;
+      padding: 0px 2px;
+  }
+  .trial .signary td b,.signary.open td b {padding: 0; width: 0.8em;}
 }
 @media (max-width: 900px) {
-	.example td,.example th{display: block}
-    .panel .help {display: none}
+.example td,.example th{display: block}
+  .panel .help {display: none}
 }
 @media (min-width: 628px) {
-    .specials {text-align: left;}
-    .signary {position: absolute;top:5px;right:1px; width:230px}
-    .phn textarea {padding-right: 225px;}
-    .phs textarea {padding-right: 250px}
-    .ibe2lat .phn textarea {border-radius: 3px; }
-    .signary td b,.nondual .signary.open td b {font-size: 26px; height: 26px; width: 0.975em; padding: 0;}
-    .nondual .signary td b {padding: 0px 2px;}
-    .trial .signary,.signary.open {width: 258px;}
-    .trial.ibe2lat #i {padding-right: 250px;}
+  .specials {text-align: left;}
+  .signary {position: absolute;top:5px;right:1px; width:230px}
+  .phn textarea {padding-right: 225px;}
+  .phs textarea {padding-right: 250px}
+  .ibe2lat .phn textarea {border-radius: 3px; }
+  .signary td b,.nondual .signary.open td b {font-size: 26px; height: 26px; width: 0.975em; padding: 0;}
+  .nondual .signary td b {padding: 0px 2px;}
+  .trial .signary,.signary.open {width: 258px;}
+  .trial.ibe2lat #i {padding-right: 250px;}
 }
 @media (min-width: 1020px) {
-    .wrap {max-width: 1020px;margin: 0 auto}
+  .wrap {max-width: 1020px;margin: 0 auto}
 }
