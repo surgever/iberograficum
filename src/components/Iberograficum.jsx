@@ -1,24 +1,30 @@
 // MAIN APP FILE
 import { Routes, Route } from 'react-router-dom';
 
-import Header from "@/components/Header"
-import IME from "@/components/IME"
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import Layout from "@/components/Layout"
 import Plomo from '@/components/Plomo';
-import FAQ from '@/components/FAQ';
-import Footer from "@/components/Footer"
+import Home  from '@/routes/Home';
+import About from '@/routes/About'; 
+import Epi   from '@/routes/Epi';
+import Error404 from '@/routes/404.jsx';
 
 //scripts
 import "../lib/iberice.js"
 
 const Iberograficum = () => {
   return (
-    <>
-      <Header />
-      <IME />
-      <Plomo />
-      <FAQ />
-      <Footer />
-    </>
+    <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="about" element={<About />} />
+          <Route path="epi" element={<Epi />}> 
+            <Route path=":code" element={<Plomo />} />
+          </Route>
+          <Route path="*" element={<Error404 />} />
+        </Route>
+    </Routes>
   );
 };
 

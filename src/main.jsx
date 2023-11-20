@@ -10,7 +10,9 @@ import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Iberograficum />
+    <Router>
+      <Iberograficum />
+    </Router>
   </React.StrictMode>
 )
  
