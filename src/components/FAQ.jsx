@@ -1,5 +1,4 @@
-import React from "react"
-import Accordion from  "./Accordion.js"
+import Accordion from  "@/components/Accordion"
 
 const FAQ = props => {
     const faqFontUse = <>
@@ -39,12 +38,11 @@ const FAQ = props => {
 
     const faqLicense = <>
         <p>Iberograficum es software libre! </p>
-        <p>Puedes reutilizarlo y adaptarlo a otros proyectos con la licencia <a href="https://creativecommons.org/licenses/by-nc-sa/2.0/es/deed.es" target="_blank" rel="nofollow">Creative Commons BY-NC-SA</a>.
+        <p>Puedes reutilizarlo y adaptarlo a otros proyectos con la licencia <a href="https://creativecommons.org/licenses/by-nc-sa/2.0/es/deed.es" target="_blank" rel="noreferrer nofollow">Creative Commons BY-NC-SA</a>.
             <strong>Texto completo: </strong>
-            <a href="https://creativecommons.org/licenses/by-nc-sa/2.0/es/legalcode.es" target="_blank">Español</a> / <a href="https://creativecommons.org/licenses/by-nc-sa/2.0/legalcode" target="_blank">English</a>.</p>
-        <p>Por favor, cítese de esta manera:  Iberograficum (https://surgever.com/iberograficum), Sergio Oliver, 2021; ?></p>
+            <a href="https://creativecommons.org/licenses/by-nc-sa/2.0/es/legalcode.es" target="_blank" rel="noreferrer nofollow">Español</a> / <a href="https://creativecommons.org/licenses/by-nc-sa/2.0/legalcode" target="_blank" rel="noreferrer nofollow">English</a>.</p>
+        <p>Por favor, cítese de esta manera:  Iberograficum (https://surgever.com/iberograficum), Sergio Oliver, 2023</p>
     </>
-    const faqGente = <p>Hola mi gente</p>
 
     return (
         <div id="doc">

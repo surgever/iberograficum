@@ -5,41 +5,41 @@
     // Character map lists the correspodences the sequence of letter to sign correspondce in a many-letters-to-one-sign fashion
     // Letters should cover all basic latin alphabet. Signs cover from 0x10200 to 0x10237. (Hex 0x10200 = Dec 66048)
     var charMapSyllabs, charMapVowels;
-    var charMapVowelsNonDual = new Array(
+    var charMapVowelsNonDual = [
         ['Ø'], ['a','á'], ['Ø'], ['e','é'], ['Ø'], ['i','í','y'], ['Ø'], ['o','ó'], ['Ø'], ['u','ú']
-    );
-    var charMapVowelsDual = new Array(
+    ];
+    var charMapVowelsDual = [
         ['a','á'], ['Ø'], ['e','é'], ['Ø'], ['Ø'], ['i','í','y'], ['Ø'], ['o','ó'], ['Ø'], ['u','ú']
-    );
-    var charMapVowelsTrial = new Array(
+    ];
+    var charMapVowelsTrial = [
         ['á'], ['a'], ['é'], ['e'], ['í'], ['i','y'], ['ó'], ['o'], ['ú'], ['u']
-    );
-    var charMapDecodeNonTrialVowels = new Array(
+    ];
+    var charMapDecodeNonTrialVowels = [
         ['a'], ['a'], ['e'], ['e'], ['i'], ['i'], ['o'], ['o'], ['u'], ['u']
-    );
-    var charMapSyllabsNonDual = new Array(
+    ];
+    var charMapSyllabsNonDual = [
         ['ba','va','pa'], ['be','ve','pe'], ['bi','vi','pi'], ['bo','vo','po'], ['bu','vu','pu'],
         ['Ø'], ['Ø'],['ka','ḱa','kha','cha','ca', 'ga','ja'], ['Ø'], ['Ø'], ['ke','ḱe','khe','che','ce','que','ge','gue','je'], 
         ['Ø'], ['ki','ci','qui','ḱi','gi','gui','ji'], ['Ø'], ['ko','co','go','jo'], ['ku','cu','q','gu','gü','ju','w'], ['Ø'],
         ['tá'], ['ta','da'], ['té'], ['te','de'], ['tí'], ['ti','di'], ['tó'], ['to','do'], ['tú'], ['tu','du']
-    );
-    var charMapSyllabsDual = new Array(
+    ];
+    var charMapSyllabsDual = [
         ['ba','va','pa'], ['be','ve','pe'], ['bi','vi','pi'], ['bo','vo','po'], ['bu','vu','pu'],
         ['ḱa','kha','cha'], ['ka','ca','ká'], ['ga','ja'], ['ḱe','khe','che'], ['ke','ce','que','ké'], ['ge','gue','je'],
         ['ki','ci','qui','ḱi'], ['gi','gui','ji'], ['ko','co'], ['go','jo'], ['ku','cu','q'], ['gu','gü','ju','w'],
         ['ta'], ['da'], ['te'], ['de'], ['ti'], ['di'], ['to'], ['do'], ['tu'], ['du']
-    );
-    var charMapDecodeNonDualSyllabs = new Array(
+    ];
+    var charMapDecodeNonDualSyllabs = [
         ['ba'], ['be'], ['bi'], ['bo'], ['bu'],
         ['ka'], ['ka'],['ka'], ['ke'], ['ke'], ['ke'], 
         ['ki'], ['ki'], ['ko'], ['ko'], ['ku'], ['ku'],
         ['ta'], ['ta'], ['te'], ['te'], ['ti'], ['ti'], ['to'], ['to'], ['tu'], ['tu']
-    );
-    var charMapFinal = new Array(
+    ];
+    var charMapFinal = [
         ['l'], ['â','ĺ','´l'], ['m'], ['ń','´n','ñ'], ['n'], ['ḿ'], ['m̆','m̌','ṁ'], 
         ['r'], ['r̆','ř','´ŕ','´´r'], ['ŕ','´r'], ['ŝ','´ś','sh'], ['s'], ['ś','´s','z','x'],
         ['‡','f'], ['I','1'], ['L','ʟ'], ['Π','π'], ['¼'], ['½','=']
-    );
+    ];
 
     // Detect accented dual notation (such as ké/ke) and replace it for standard (ke/ge)
     var accentsDualReplacer = function(input) {
@@ -87,9 +87,9 @@
         }
     }
     
+    var output = raw;
     if(decrypt === undefined) {
         // Begin processing the latin text: notation systemization
-        var output = raw;
         output = output.replace(/R/g,'ŕ').replace(/S/g,'ś').replace(/I/g,'1').replace(/L/g,'ʟ').replace(/P/g,'Π').replace(/V/g,'Ⅴ').replace(/X/g,'Ⅹ');
         output = output.replace(/ [:·] /g,':');
         output = output.toLowerCase();
@@ -113,7 +113,6 @@
         return  '\u{10239}' + output + '\u{1023f}';
     } else {
         // Begin decrypting the iberic text
-        var output = raw;
         // Pad separation dots 
         output = output.replace(/[:·]/g,' : ');
 

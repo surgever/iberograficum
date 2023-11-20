@@ -1,13 +1,13 @@
-import React, { useState } from "react"
+import { useState } from "react"
 
 const Accordion = props => {
     const [closed,setClosed] = useState("cerrado")
 
     const toggleClosed = () => {
         if(closed) {
-            setClosed("") 
+            setClosed("")
         } else {
-            setClosed("cerrado") 
+            setClosed("cerrado")
         }
     }
 
