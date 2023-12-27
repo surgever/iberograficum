@@ -14,7 +14,7 @@ const Plomo = () => {
                     <tr><th colSpan="2"><img src={PlomoPrat} alt="Calco Plomo Ullastret" /></th></tr>
                     <tr>
                         <td className="ibero"><p>𐈀𐈬​:​𐈊𐈯𐈅𐈀𐈭𐈂𐈋</p></td>
-                        <td className="latin">ar : basiar̆ebe</td>
+                        <td className="latin">ar : basiařebe aasdas</td>
                     </tr>
                     <tr>
                         <td className="ibero">𐈂𐈊𐈮𐈅𐈐𐈧𐈂​:​𐈣𐈅𐈓𐈯𐈅𐈮𐈀​:​𐈍𐈬𐈯𐈝​:​𐈀𐈊𐈮𐈔𐈍𐈬𐈯𐈝​:​𐈝𐈮</td>
@@ -22,19 +22,19 @@ const Plomo = () => {
                     </tr>
                     <tr>
                         <td className="ibero">𐈠𐈭𐈯​:​𐈊𐈅𐈞𐈯𐈌​:​𐈩𐈂𐈅𐈝𐈔𐈭𐈉​:​𐈛𐈮𐈋𐈥𐈅𐈇𐈭𐈙​:​𐈟𐈧𐈇𐈭</td>
-                        <td className="latin">dir̆s : baidesbi : neiteger̆u : taŕbelior̆ku : timor̆</td>
+                        <td className="latin">diřs : baidesbi : neitegeřu : taŕbeliořku : timoř</td>
                     </tr>
                     <tr>
                         <td className="ibero">𐈕𐈮​:​𐈊𐈬𐈜𐈱𐈗​:​𐈀𐈩𐈋𐈅𐈙​:​𐈊𐈅𐈞𐈯𐈅𐈬​:​𐈯𐈀𐈥𐈤𐈗​:​𐈙𐈥𐈂𐈛𐈋𐈭𐈙+[ &nbsp;</td>
-                        <td className="latin">kiŕ : bardaśko : anbeiku : baidesir : salduko : kuletaber̆ku+[</td>
+                        <td className="latin">kiŕ : bardaśko : anbeiku : baidesir : salduko : kuletabeřku+[</td>
                     </tr>
                     <tr>
                         <td className="ibero">𐈌𐈖𐈥𐈠𐈭𐈯𐈝​:​𐈂𐈮𐈂𐈱𐈉​:​𐈗𐈠𐈊𐈩𐈂𐈩​:​𐈂𐈋𐈬𐈑​:​𐈛𐈱𐈐𐈥𐈅𐈮𐈯</td>
-                        <td className="latin">bigildir̆ste : eŕeśu : kodibanen : eberga : taśkaliŕs</td>
+                        <td className="latin">bigildiřste : eŕeśu : kodibanen : eberga : taśkaliŕs</td>
                     </tr>
                     <tr>
                         <td className="ibero">&nbsp; 𐈥𐈇𐈭𐈯𐈀​:​𐈊𐈟𐈌​:​𐈌𐈉𐈭𐈛𐈩𐈂𐈱​:​𐈯𐈀𐈥𐈤𐈖𐈥𐈂𐈭𐈙​:​𐈖𐈿</td>
-                        <td className="latin">&nbsp; &nbsp; lor̆sa : batibi : biur̆taneś : saldugiler̆ku : gi</td>
+                        <td className="latin">&nbsp; &nbsp; lořsa : batibi : biuřtaneś : saldugileřku : gi</td>
                     </tr>
                 </tbody></table>
             </div>
