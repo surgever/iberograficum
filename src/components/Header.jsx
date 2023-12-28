@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 const links = [
     { path: '/', text: 'Home' },
     { path: 'about', text: 'About' },
-    { path: 'epi/ullastret', text: 'Epi' }
+    { path: 'epi', text: 'Epi' }
 ];
   
 
