@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <div className="todos">
         <IME />
-        <Plomo />
+        <Plomo code="GI.15.04" />
       </div>
   );
 };

@@ -15,13 +15,19 @@ const epiData = [
       description:
         ' ',
     },
+    {
+      code: '404',
+      title: 'No encontrado',
+      description:
+        ' ',
+    },
 ];
 
-const Plomo = () => {
+const Plomo = props => {
     let { code } = useParams();
-    { code ? '' : code = 'GI.15.04' }; 
-
-    const epiContent = epiData.find((item) => item.code === code);
+    if(props.code) code = props.code ; 
+    let epiContent = epiData.find((item) => item.code === code);
+    { epiContent ? '' : epiContent = epiData.find((item) => item.code === '404') }; 
     const { title, description } = epiContent;
 
     return (
