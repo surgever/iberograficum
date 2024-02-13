@@ -2,29 +2,10 @@ import PlomoUllastret from "@/img/C.2.3 Ullastret - Foto.png"
 import PlomoPrat from "@/img/C.2.3 Ullastret - O.Prat.png"
 import { useParams } from 'react-router-dom';
 
-const epiData = [
-    {
-      code: 'GI.15.04',
-      title: 'Plomo de Ullastret',
-      description:
-        "  ",
-    },
-    {
-      code: 'V.06.008',
-      title: 'Vaso de los letreros',
-      description:
-        ' ',
-    },
-    {
-      code: '404',
-      title: 'No encontrado',
-      description:
-        ' ',
-    },
-];
-
 const Plomo = props => {
     let { code } = useParams();
+
+    const epiData = props.epiData;
     if(props.code) code = props.code ; 
     let epiContent = epiData.find((item) => item.code === code);
     { epiContent ? '' : epiContent = epiData.find((item) => item.code === '404') }; 

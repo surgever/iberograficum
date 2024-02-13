@@ -10,6 +10,26 @@ import About from '@/routes/About';
 import Epi   from '@/routes/Epi';
 import Error404 from '@/routes/404.jsx';
 
+const epiData = [
+    {
+      code: 'GI.15.04',
+      title: 'Plomo de Ullastret',
+      description:
+        "  ",
+    },
+    {
+      code: 'V.06.008',
+      title: 'Vaso de los letreros',
+      description:
+        ' ',
+    },
+    {
+      code: '404',
+      title: 'No encontrado',
+      description:
+        ' ',
+    },
+];
 //scripts
 import "../lib/iberice.js"
 
@@ -17,10 +37,10 @@ const Iberograficum = () => {
   return (
     <Routes>
         <Route path="/" element={<Layout />}>
-          <Route index element={<Home />} />
+          <Route index element={<Home epiData={epiData} />} />
           <Route path="about" element={<About />} />
           <Route path="epi" element={<Epi />}> 
-            <Route path=":code" element={<Plomo />} />
+            <Route path=":code" element={<Plomo epiData={epiData} />} />
           </Route>
           <Route path="*" element={<Error404 />} />
         </Route>
