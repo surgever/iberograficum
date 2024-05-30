@@ -19,7 +19,7 @@ const Plomo = props => {
             <figure id="plom"><a href={PlomoUllastret} target="_blank" rel="nofollow noreferrer">
                 <img className="transition" src={PlomoUllastret} alt="Plomo Ullastret"/>
             </a></figure>
-            <h2>{title}</h2>
+            <h2>{title == 'No encontrado' ? code : title}</h2>
             <pre>{epiText}</pre>
             <div className="wrap">
                 <table><tbody>

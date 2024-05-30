@@ -32,7 +32,7 @@ const EpiList = props => {
 
     return (
         <nav className={"navbar " + (searchOpen ? 'on' : 'off')}>
-            <ul>
+            <ul className="featured">
                 {epilinks.map((link) => {
                 return (
                     <li key={link.text}>
@@ -51,6 +51,17 @@ const EpiList = props => {
                         value={searchText}
                     />
                 </li>
+            </ul>
+            <ul className="results">
+                {searchResults.map((epi) => {
+                    return (
+                        <li key={epi.key}>
+                            <Link to={epi.key} >
+                                {epi.key}: {epi.text}
+                            </Link>
+                        </li>
+                    );
+                })}
             </ul>
         </nav>
     )
