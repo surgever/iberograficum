@@ -24,6 +24,7 @@ const AreaIberic = props => {
             <textarea id="i" placeholder="..."
                 value={props.valueProps}
                 onChange={e => props.handleTextIbericProps(e.target.value)}
+                onKeyDown={e => props.handleIbericKeyProps(e)}
                 // readOnly={props.dir === 'lat2ibe'}
             ></textarea>
         </div>
