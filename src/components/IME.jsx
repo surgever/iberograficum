@@ -186,11 +186,13 @@ const IME = () => {
                 <AreaLatIn 
                     valueProps={textLatin}
                     dir={direction} mode={mode}
-                    handleTextLatinProps={replaceTextLatin} handleTextIbericProps={replaceTextIberic}/>
+                    handleTextLatinProps={replaceTextLatin}
+                    handleTextIbericProps={replaceTextIberic}/>
                 <AreaIberic
                     valueProps={textIberic}
                     dir={direction} mode={mode}
-                    handleTextIbericProps={replaceTextIberic} handleTextLatoutProps={replaceTextLatout}
+                    handleTextIbericProps={replaceTextIberic}
+                    handleTextLatoutProps={replaceTextLatout}
                     handleIbericKeyProps={enterIbericKey}
                 />
                 <AreaLatOut
