@@ -7,9 +7,10 @@ const epilinks = [
     { path: 'V.06.008', text: 'Vaso de los letreros' },
 ];
 
-const EpiList = () => {
+const EpiList = props => {
     const [searchOpen, setSearchOpen] = useState(false);
     const [searchText,setSearchText] = useState("")
+    const epiDB = props.epiDB;
     const handleSearchText = newText => {
         console.log('Search text is : ' + newText)
         setSearchText(newText)

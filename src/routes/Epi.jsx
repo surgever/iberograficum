@@ -1,10 +1,10 @@
 import { Outlet } from 'react-router-dom';
 import EpiList from '@/components/EpiList';
 
-const Epi = () => {
+const Epi = props => {
     return (
       <>
-        <EpiList />
+        <EpiList  epiDB={props.epiDB} />
         <Outlet />
       </>
     );
