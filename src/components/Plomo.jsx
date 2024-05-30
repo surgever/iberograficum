@@ -9,7 +9,7 @@ const Plomo = props => {
     const epiDB = props.epiDB;
     if(props.code) code = props.code ; 
     let epiContent = epiData.find((item) => item.code === code);
-    { epiContent ? '' : epiContent = epiData.find((item) => item.code === '404') }; 
+    { epiContent ? '' : epiContent = epiData.find((item) => item.code === '404') };
     let epiText = epiDB.epis[code] ? epiDB.epis[code] : 'Not found text';
     const { title, description } = epiContent;
 

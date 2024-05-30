@@ -6,7 +6,7 @@ import ReactDOM from 'react-dom/client'
 import Layout from "@/components/Layout"
 import Plomo from '@/components/Plomo';
 import Home  from '@/routes/Home';
-import About from '@/routes/About'; 
+import About from '@/routes/About';
 import Epi   from '@/routes/Epi';
 import Error404 from '@/routes/404.jsx';
 import EpiDB from '@/lib/epi.json';
