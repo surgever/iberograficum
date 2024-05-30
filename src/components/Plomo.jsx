@@ -6,9 +6,11 @@ const Plomo = props => {
     let { code } = useParams();
 
     const epiData = props.epiData;
+    const epiDB = props.epiDB;
     if(props.code) code = props.code ; 
     let epiContent = epiData.find((item) => item.code === code);
     { epiContent ? '' : epiContent = epiData.find((item) => item.code === '404') }; 
+    let epiText = epiDB.epis[code] ? epiDB.epis[code] : 'Not found text';
     const { title, description } = epiContent;
 
     return (
@@ -18,6 +20,7 @@ const Plomo = props => {
                 <img className="transition" src={PlomoUllastret} alt="Plomo Ullastret"/>
             </a></figure>
             <h2>{title}</h2>
+            <pre>{epiText}</pre>
             <div className="wrap">
                 <table><tbody>
                     <tr><th colSpan="2"><img src={PlomoPrat} alt="Calco Plomo Ullastret" /></th></tr>

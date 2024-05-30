@@ -9,6 +9,7 @@ import Home  from '@/routes/Home';
 import About from '@/routes/About'; 
 import Epi   from '@/routes/Epi';
 import Error404 from '@/routes/404.jsx';
+import EpiDB from '@/lib/epi.json';
 
 const epiData = [
     {
@@ -37,10 +38,12 @@ const Iberograficum = () => {
   return (
     <Routes>
         <Route path="/" element={<Layout />}>
-          <Route index element={<Home epiData={epiData} />} />
+          <Route index element={<Home epiData={epiData} epiDB={EpiDB} />} />
           <Route path="about" element={<About />} />
           <Route path="epi" element={<Epi />}> 
-            <Route path=":code" element={<Plomo epiData={epiData} />} />
+            <Route path=":code"
+              element={<Plomo epiData={epiData} epiDB={EpiDB} />}
+            />
           </Route>
           <Route path="*" element={<Error404 />} />
         </Route>
