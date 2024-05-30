@@ -40,7 +40,7 @@ const Iberograficum = () => {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home epiData={epiData} epiDB={EpiDB} />} />
           <Route path="about" element={<About />} />
-          <Route path="epi" element={<Epi />}> 
+          <Route path="epi" element={<Epi epiDB={EpiDB} />}> 
             <Route path=":code"
               element={<Plomo epiData={epiData} epiDB={EpiDB} />}
             />

@@ -1,5 +1,6 @@
 
 import { Link } from 'react-router-dom';
+import { useState, useEffect } from "react"
 
 const epilinks = [
     { path: 'GI.15.04', text: 'Plomo de Ullastret' },
@@ -7,12 +8,19 @@ const epilinks = [
 ];
 
 const EpiList = () => {
-    const headerStyle = {
-        padding: "20px 0", 
-        lineHeight: "1.5em",
+    const [searchOpen, setSearchOpen] = useState(false);
+    const [searchText,setSearchText] = useState("")
+    const handleSearchText = newText => {
+        console.log('Search text is : ' + newText)
+        setSearchText(newText)
+        // Search epiDB if 4 chars or more are filled in
+        if(newText.length > 3) {
+
+        }
     }
+
     return (
-        <nav className="navbar">
+        <nav className={"navbar " + (searchOpen ? 'on' : 'off')}>
             <ul>
                 {epilinks.map((link) => {
                 return (
@@ -23,6 +31,15 @@ const EpiList = () => {
                     </li>
                 );
                 })}
+                <li className='search-li'>
+                    <input type='text'
+                        placeholder={ searchOpen ? 'Search epigraphy content' : 'Search...'}
+                        onFocus={ () => setSearchOpen( true ) }
+                        onBlur={ () => setSearchOpen( false ) }
+                        onChange={e => handleSearchText(e.target.value)}
+                        value={searchText}
+                    />
+                </li>
             </ul>
         </nav>
     )
