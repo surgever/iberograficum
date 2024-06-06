@@ -1,5 +1,5 @@
 
-import { Link } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 import { useState, useEffect } from "react"
 
 const epilinks = [
@@ -38,14 +38,14 @@ const EpiList = props => {
     }
 
     return (
-        <nav className={"navbar " + (searchOpen ? 'on' : 'off')}>
+        <nav className={"navbar search " + (searchOpen ? 'on' : 'off')}>
             <ul className="featured">
                 { !searchOpen && epilinks.map((link) => {
                 return (
                     <li key={link.text}>
-                        <Link to={link.path} >
+                        <NavLink to={link.path} >
                             {link.text}
-                        </Link>
+                        </NavLink>
                     </li>
                 );
                 })}
@@ -66,9 +66,9 @@ const EpiList = props => {
                 {searchResults.map((epi) => {
                     return (
                         <li key={epi.key}>
-                            <Link to={epi.key} >
-                                {epi.key}: {epi.text}
-                            </Link>
+                            <NavLink to={epi.key} >
+                                <span>{epi.key}</span> {epi.text}
+                            </NavLink>
                         </li>
                     );
                 })}

@@ -15,7 +15,7 @@ const Header = () => {
         <header style={headerStyle}>
             <h1
                 style={{
-                    fontSize: "6rem", fontWeight: "600", marginBottom: ".5rem", lineHeight: "1em",
+                    fontSize: "6rem", fontWeight: "600", marginBottom: "1.5rem", lineHeight: "1em",
                     color: "#333", textTransform: "lowercase", textAlign: "center", fontStyle: "italic", 
                 }}
             >
