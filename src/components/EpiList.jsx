@@ -14,7 +14,6 @@ const EpiList = props => {
     const epiDB = props.epiDB;
     
     const handleSearchText = newText => {
-        console.log('Search text is : ' + newText)
         setSearchText(newText)
         // Search epiDB if 4 chars or more are filled in
         if(newText.length > 3) {
@@ -28,6 +27,12 @@ const EpiList = props => {
             }
             setSearchResults(searchArray);
         }
+    }
+    const handleCloseSearch = e => {
+        e.preventDefault()
+        setSearchOpen( false )
+        setSearchText('')
+        setSearchResults([])
     }
 
     return (
@@ -50,6 +55,9 @@ const EpiList = props => {
                         onChange={e => handleSearchText(e.target.value)}
                         value={searchText}
                     />
+                </li>
+                <li className='clear-li'>
+                    <button onClick={handleCloseSearch}>✕</button>
                 </li>
             </ul>
             <ul className="results">
