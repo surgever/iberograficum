@@ -85,7 +85,7 @@ const IME = () => {
         let kl = event.key; // pressed key letter 
         console.log('enterIbericKey: ');
         console.log(kl);
-        if (kl == "'") { // pressed: accent
+        if (kl == "'" || kl == "/" ) { // pressed: accent
             event.preventDefault();
             if (accent < 2 && occlusive == -1) {
                 accent++;
