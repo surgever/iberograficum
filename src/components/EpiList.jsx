@@ -58,9 +58,11 @@ const EpiList = props => {
                         value={searchText}
                     />
                 </li>
+                { searchText && 
                 <li className='clear-li'>
                     <button onClick={handleCloseSearch}>✕</button>
                 </li>
+                }
             </ul>
             <ul className="results">
                 {searchResults.map((epi) => {
