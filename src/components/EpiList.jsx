@@ -53,7 +53,7 @@ const EpiList = props => {
                     <input type='text'
                         placeholder={ searchOpen ? 'Search epigraphy content' : 'Search...'}
                         onFocus={ () => setSearchOpen( true ) }
-                        onBlur={ () => setSearchOpen( false ) }
+                        onBlur={ () => searchResults.length == 0 && setSearchOpen( false ) }
                         onChange={e => handleSearchText(e.target.value)}
                         value={searchText}
                     />
