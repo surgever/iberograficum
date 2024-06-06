@@ -26,6 +26,8 @@ const EpiList = props => {
                 }
             }
             setSearchResults(searchArray);
+        } else if(newText.length === 0) {
+            setSearchResults([]);
         }
     }
     const handleCloseSearch = e => {
