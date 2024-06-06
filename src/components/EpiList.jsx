@@ -40,7 +40,7 @@ const EpiList = props => {
     return (
         <nav className={"navbar " + (searchOpen ? 'on' : 'off')}>
             <ul className="featured">
-                {epilinks.map((link) => {
+                { !searchOpen && epilinks.map((link) => {
                 return (
                     <li key={link.text}>
                         <Link to={link.path} >
