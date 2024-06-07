@@ -48,13 +48,13 @@ const Plomo = props => {
     return (
         
         <div className="example">
-            {code == 'GI.15.04' &&
-                <figure id="plom"><a href={PlomoUllastret} target="_blank" rel="nofollow noreferrer">
-                    <img className="transition" src={PlomoUllastret} alt="Plomo Ullastret"/>
+            {epiImg[code] && epiImg[code].photo &&
+                <figure id="plom"><a href={epiImg[code].photo} target="_blank" rel="nofollow noreferrer">
+                    <img className="transition" src={epiImg[code].photo} alt="Plomo "/>
                 </a></figure>
             }
             <h2>{title == 'No encontrado' ? code : title}</h2>
-            <Transcription epiText={epiText} code={code} />
+            <Transcription epiText={epiText} epiImg={epiImg} code={code} />
         </div>
     )
 }
