@@ -41,9 +41,8 @@ const Iberograficum = () => {
           <Route index element={<Home epiData={epiData} epiDB={EpiDB} />} />
           <Route path="about" element={<About />} />
           <Route path="epi" element={<Epi epiDB={EpiDB} />}> 
-            <Route path=":code"
-              element={<Plomo epiData={epiData} epiDB={EpiDB} />}
-            />
+            <Route index element={<Plomo code="GI.15.04" epiData={epiData} epiDB={EpiDB} />} />
+            <Route path=":code" element={<Plomo epiData={epiData} epiDB={EpiDB} />} />
           </Route>
           <Route path="*" element={<Error404 />} />
         </Route>
