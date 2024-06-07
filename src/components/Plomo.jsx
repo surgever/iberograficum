@@ -1,10 +1,42 @@
 import PlomoUllastret from "@/img/C.2.3 Ullastret - Foto.png"
+import PlomoPrat from "@/img/C.2.3 Ullastret - O.Prat.png"
+import PicoAjos from "@/img/Pico_de_Los_Ajos_I.jpg"
+import PicoAjosCalco from "@/img/Pico_de_Los_Ajos_I_texto.png"
+import Pujol from "@/img/Plomo_Pujol.png"
+import PujolCalco from "@/img/Plomo_Pujol-Calco.jpg"
+import Sinarcas from "@/img/Estela de Sinarcas.png"
+import SinarcasCalco from "@/img/Estela de Sinarcas - Calco.gif"
+import Letreros from "@/img/vaso-letreros.png"
+import LetrerosCalco from "@/img/vaso-letreros-calco.png"
+
 import { useParams } from 'react-router-dom';
 import Transcription from '@/components/Transcription';
 
 const Plomo = props => {
     let { code } = useParams();
 
+    const epiImg = {
+        'GI.15.04' : {
+            photo : PlomoUllastret,
+            calco : PlomoPrat
+        }, 
+        'CS.14.01' : {
+            photo : Pujol,
+            calco : PujolCalco
+        }, 
+        'V.01.01' : {
+            photo : Sinarcas,
+            calco : SinarcasCalco
+        }, 
+        'V.13.03' : {
+            photo : PicoAjos,
+            calco : PicoAjosCalco
+        }, 
+        'V.06.008' : {
+            photo : Letreros,
+            calco : LetrerosCalco
+        }
+    }
     const epiData = props.epiData;
     const epiDB = props.epiDB;
     if(props.code) code = props.code ; 

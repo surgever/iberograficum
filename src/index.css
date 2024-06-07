@@ -119,7 +119,7 @@ textarea.latin { font: normal 16px Arial, Helvetica, sans-serif; }
 .info .lang b {float:right;}
 /*Examples*/
 #plom {max-width: 1200px; margin: 0em auto; position: relative; perspective: 1500px;z-index:1;}
-#plom img {width: 100%; max-width: 100%; margin: 0 auto; height: auto;display: block; position: relative; }
+#plom img {width: auto; max-width: 100%; margin: 0 auto; height: auto;display: block; position: relative; }
 #plom img.transition {transition: all .2s ease-out;}
 
 .example {background:#333; padding-top: 2em; text-align: center}
