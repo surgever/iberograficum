@@ -9,19 +9,19 @@ const epilinks = [
 
 const EpiList = props => {
     const [searchOpen, setSearchOpen] = useState(false);
-    const [searchText,setSearchText] = useState("")
-    const [searchResults,setSearchResults] = useState([])
+    const [searchText, setSearchText] = useState("")
+    const [searchResults, setSearchResults] = useState([])
     const epiDB = props.epiDB;
     
     const handleSearchText = newText => {
-        setSearchText(newText)
+        setSearchText(newText.toLowerCase())
         // Search epiDB if 4 chars or more are filled in
         if(newText.length > 3) {
             // Search {newText} in readings of epiDB.epis[key, reading] 
             // and find all epigraphy items that match it
             let searchArray = [];
             for(let key in epiDB.epis) {
-                if(epiDB.epis[key].indexOf(newText)!=-1) {
+                if(epiDB.epis[key].indexOf(newText.toLowerCase())!=-1) {
                     searchArray.push({key, 'text' : epiDB.epis[key]}  );
                 }
             }
