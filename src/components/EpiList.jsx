@@ -5,6 +5,9 @@ import { useState, useEffect } from "react"
 const epilinks = [
     { path: 'GI.15.04', text: 'Plomo de Ullastret' },
     { path: 'V.06.008', text: 'Vaso de los letreros' },
+    { path: 'V.13.03', text: 'Pico de los Ajos' },
+    { path: 'CS.14.01', text: 'Plomo de Pujol' },
+    { path: 'V.01.01', text: 'Estela de Sinarcas' },
 ];
 
 const EpiList = props => {
