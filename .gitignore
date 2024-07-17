@@ -1,6 +1,8 @@
 node_modules
 backups
+native
 old-iberograficum
+old
 # Logs
 logs
 *.log
