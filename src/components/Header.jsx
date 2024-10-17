@@ -10,6 +10,8 @@ const Header = () => {
     const headerStyle = {
         padding: "20px 0", 
         lineHeight: "1.5em",
+        width: '100%',
+        overflow: 'hidden'
     }
     return (
         <header style={headerStyle}>
