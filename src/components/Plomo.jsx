@@ -1,6 +1,6 @@
 import PlomoUllastret from "@/img/C.2.3 Ullastret - Foto.png"
 import PlomoPrat from "@/img/C.2.3 Ullastret - O.Prat.png"
-import PicoAjos from "@/img/Pico_de_Los_Ajos_I.jpg"
+import PicoAjos from "@/img/Pico_de_Los_Ajos_I.png"
 import PicoAjosCalco from "@/img/Pico_de_Los_Ajos_I_texto.png"
 import Pujol from "@/img/Plomo_Pujol.png"
 import PujolCalco from "@/img/Plomo_Pujol-Calco.jpg"
