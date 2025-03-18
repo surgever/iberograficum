@@ -42,7 +42,6 @@ const Plomo = props => {
     if(props.code) code = props.code ; 
     let epiContent = epiData.find((item) => item.code === code);
     { epiContent ? '' : epiContent = epiData.find((item) => item.code === '404') };
-    let epiText = epiDB.epis[code] ? epiDB.epis[code] : 'Not found text';
     const { title, description } = epiContent;
 
     return (
@@ -53,7 +52,10 @@ const Plomo = props => {
                     <img className="transition" src={epiImg[code].photo} alt="Plomo "/>
                 </a></figure>
             }
-            <h2>{title == 'No encontrado' ? code : title}</h2>
+            <h2>{title == 'No encontrado' ?
+                (epiDB.epis[code] ? code : '404')
+                :
+                title}</h2>
             {epiDB.epis[code] &&
                 <Transcription epiText={epiDB.epis[code]} epiImg={epiImg} code={code} />
             }
