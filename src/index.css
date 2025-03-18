@@ -122,7 +122,7 @@ textarea.latin { font: normal 16px Arial, Helvetica, sans-serif; }
 #plom img {width: auto; max-width: 100%; margin: 0 auto; height: auto;display: block; position: relative; }
 #plom img.transition {transition: all .2s ease-out;}
 
-.example {background:#333; padding-top: 2em; text-align: center}
+.example {background:#333; padding: 2em 0; text-align: center}
 .example table {line-height: 36px; overflow:auto;color: black; background: white;
   border-radius: 3px; margin: 0 auto; width:100%; border-collapse: collapse; }
 .example img {max-width: 550px;width: 100%;}
