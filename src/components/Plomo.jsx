@@ -57,7 +57,11 @@ const Plomo = props => {
                 :
                 title}</h2>
             {epiDB.epis[code] &&
-                <Transcription epiText={epiDB.epis[code]} epiImg={epiImg} code={code} />
+                <Transcription
+                    epiText={epiDB.epis[code]}
+                    epiImg={epiImg}
+                    code={code}
+                    />
             }
         </div>
     )
