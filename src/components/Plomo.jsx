@@ -43,6 +43,7 @@ const Plomo = props => {
     let epiContent = epiData.find((item) => item.code === code);
     { epiContent ? '' : epiContent = epiData.find((item) => item.code === '404') };
     const { title, description } = epiContent;
+    let HesperiaURL = 'http://hesperia.ucm.es/consulta_hesperia/inscripciones_localidad_zonas_C_y_D.php?ref=' + code;
 
     return (
         
@@ -63,6 +64,11 @@ const Plomo = props => {
                     code={code}
                     />
             }
+            <div className="links">
+                {epiDB.epis[code] &&
+                    <a target="_blank" href={HesperiaURL}> BDH </a>
+                }
+            </div>
         </div>
     )
 }
