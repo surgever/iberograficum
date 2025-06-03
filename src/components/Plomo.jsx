@@ -11,6 +11,7 @@ import LetrerosCalco from "@/img/vaso-letreros-calco.png"
 
 import { useParams } from 'react-router-dom';
 import Transcription from '@/components/Transcription';
+import Infobox from "@/components/Infobox"
 
 const Plomo = props => {
     let { code } = useParams();
@@ -57,6 +58,7 @@ const Plomo = props => {
                 (epiDB.epis[code] ? code : '404')
                 :
                 title}</h2>
+            <Infobox></Infobox>
             {epiDB.epis[code] &&
                 <Transcription
                     epiText={epiDB.epis[code]}
