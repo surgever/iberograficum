@@ -134,6 +134,11 @@ textarea.latin { font: normal 16px Arial, Helvetica, sans-serif; }
 .example .links {padding: 0 10px; text-align: right; font-size: 50%;}
 .hespCode {text-align: center; display: block; margin: 0 auto; color: inherit; background: transparent; border: 0 none;
   font: normal 18px courier,monospace}
+.example .results li {display: inline-block;font-size: 18px;}
+.example .clear-li {list-style: none; text-align: right;} 
+.example .clear-li button {background: white; border: 0; padding: 2px 5px 0; margin: 0 5px;
+  cursor:pointer; border-radius: 5px 5px 0 0;} 
+.example .clear-li button:hover {color: darkred}
 .phs textarea{ direction:rtl; unicode-bidi:bidi-override; text-align: right }
 .phs .signary {width: 240px;}
 .phs .signary td {text-align: center;}
