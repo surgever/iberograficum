@@ -54,10 +54,10 @@ const Plomo = props => {
                     <img className="transition" src={epiImg[code].photo} alt="Plomo "/>
                 </a></figure>
             }
-            <h2>{title == 'No encontrado' ?
-                (epiDB.epis[code] ? code : '404')
-                :
-                title}</h2>
+            <h2>
+                {title != 'No encontrado' && title}
+                <input className="hespCode" type="text" value={(epiDB.epis[code] ? code : '404')} />
+            </h2>
             <Infobox></Infobox>
             {epiDB.epis[code] &&
                 <Transcription
